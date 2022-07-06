@@ -1,10 +1,10 @@
 # xampp-config
 
-## mysqli undefined:
+**mysqli undefined:**
 - Change php.ini:
         extension_dir = "D:\xampp\php7429\ext"
 
-https://serverfault.com/questions/66347/why-is-the-response-on-localhost-so-slow/607536#607536
+**https://serverfault.com/questions/66347/why-is-the-response-on-localhost-so-slow/607536#607536**
 
 1. Load PHP as an Apache MODULE INSTEAD OF cgi
 
