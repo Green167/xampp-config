@@ -1,4 +1,25 @@
-# xampp-config
+# xampp-config NEW
+- Download xampp 7.4.xx.
+- Copy folder php.
+- Uninstall
+- Download xampp newest.
+- Rename the current PHP folder to php8xx
+- Copy folder php to current xampp.
+- Change httpd-xampp.conf:
+ ```
+ LoadFile "D:/xampp/php/php7ts.dll"
+LoadFile "D:/xampp/php/libpq.dll"
+LoadFile "D:/xampp/php/libsqlite3.dll"
+LoadModule php7_module "D:/xampp/php/php7apache2_4.dll"
+
+...
+
+<IfModule php7_module>
+    PHPINIDir "D:/xampp/php"
+</IfModule>
+```
+
+# xampp-config OLD
 
 **mysqli undefined:**
 - Change php.ini:
